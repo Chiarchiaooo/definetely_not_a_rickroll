@@ -1,19 +1,46 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #fff;
-        }
-    </style>
-</head>
-<body>
-    <audio autoplay loop>
-        <source src="never-gonna-give-you-up.mp3" type="audio/mpeg">
-    </audio>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background:#483248;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            }
+            video {
+                max-width: 90%;
+                max-height: 70vh;
+            }
+            p {
+                margin-top: 2rem;
+                font-family: sans-serif;
+                color: #fff;
+            }
+            .hidden {
+                margin-top: 2rem;
+                font-family: sans-serif;
+                color: #483248;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p class="hidden">Oh, Hi! Didn't expect visitors here...</p>
+        <p class="hidden">Sorry for the mess, but i'm still tidying up the place</p>
+
+        <video autoplay loop muted>
+            <source src="never-gonna-give-you-up.mp4" type="video/mp4">
+        </video>
+
+        <p>"Nothing to see here, nothing to see. Seriously, what did you expect to see here?"</p>
+        <p class="hidden">https://www.youtube.com/watch?v=yKQ_sQKBASM</p>
+
+    </body>
 </html>
